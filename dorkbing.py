@@ -75,8 +75,10 @@ def main():
     all_results = []
     start_time = time.time()
 
+    print(Fore.GREEN + f'=================================================')
     print(Fore.GREEN + f'[+] Starting Bing Dorking for query: "{query}"')
-
+    print(Fore.GREEN + f'=================================================')
+    
     for page in range(pages):
         if time_limit and (time.time() - start_time) > time_limit:
             print(Fore.YELLOW + "Time limit reached, stopping...")
@@ -91,6 +93,7 @@ def main():
 
     unique_results = list(set(all_results))
 
+    print(Fore.GREEN + f'=================================================')
     if unique_results:
         with open(output_file, 'w') as f:
             for url in unique_results:
@@ -98,9 +101,11 @@ def main():
         print(Fore.GREEN + f'[-] Finished. Results saved to {output_file}')
     else:
         print(Fore.RED + 'No results found.')
-
+        
+    print(Fore.GREEN + f'=================================================')
     elapsed_time = time.time() - start_time
     print(Fore.GREEN + f'Total time taken: {elapsed_time:.2f} seconds')
-
+    print(Fore.GREEN + f'=================================================')
+    
 if __name__ == '__main__':
     main()
