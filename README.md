@@ -16,8 +16,9 @@ A Python tool to perform Bing search dorking and save the results to a file. The
 
 To get started, you'll need to install the required Python packages. You can do this using `pip`:
 
-
+```
 pip install -r requirements.txt
+```
 
 ## Usage
 
