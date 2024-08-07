@@ -23,11 +23,11 @@ pip install -r requirements.txt
 
 Clone the repository:
 ```
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/codewithwan/dorking-tools.git
 ```
 Navigate to the project directory:
 ```
-cd your-repository
+cd dorking-tools
 ```
 Run the script:
 ```
